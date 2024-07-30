@@ -1,0 +1,26 @@
+#download {
+  color: white;
+  background-color: orange;
+  width: 150px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 7px 16px;
+  position: relative;
+  text-align: center;
+}
+#download:hover {
+  filter: brightness(80%);
+}
+#download:disabled {
+  opacity: 1;
+  filter: brightness(60%);
+}

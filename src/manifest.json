@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "BongoDrive",
+  "description": "A sneaky downloader to overthrow greed and achieve academic freedom",
+  "version": "0.1.0",
+  "permissions": ["webRequest"],
+  "host_permissions": [
+    "https://www.studydrive.net/*"
+  ],
+  "icons": {
+    "16": "assets/BongoCat.png",
+    "32": "assets/BongoCat.png",
+    "48": "assets/BongoCat.png",
+    "128": "assets/BongoCat.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content/content.ts"],
+      "run_at": "document_end",
+      "matches": ["https://www.studydrive.net/*"]
+    }
+  ]
+}
